@@ -4,7 +4,7 @@
 104.18.27.224#每日精选
 104.18.19.239#每日精选
 
-# Cloudflare（怎么能少得了 Cloudflare 自己呢？
+// Cloudflare（怎么能少得了 Cloudflare 自己呢？
 cloudflare.com
 www.cloudflare.com
 cdnjs.cloudflare.com
@@ -15,39 +15,39 @@ info.cloudflare.com
 sparrow.cloudflare.com
 assets.www.cloudflare.com
 videodelivery.net
-# Cloudflare
+// Cloudflare
 
-# Uplay（育碧
+// Uplay（育碧
 store.ubi.com
-# Uplay
+// Uplay
 
-# Epic（仅登录时的验证码
+// Epic（仅登录时的验证码
 client-api.arkoselabs.com
 epic-games-api.arkoselabs.com
 cdn.arkoselabs.com
 prod-ireland.arkoselabs.com
-# Epic
+// Epic
 
-# 一些个人博客
+// 一些个人博客
 www.423down.com
 apphot.cc
-# 一些个人博客
+// 一些个人博客
 
-# Nexusmods（著名 MOD 分享下载站
+// Nexusmods（著名 MOD 分享下载站
 www.nexusmods.com
 staticdelivery.nexusmods.com
 cf-files.nexusmods.com
 staticstats.nexusmods.com
 users.nexusmods.com
-# Nexusmods
+// Nexusmods
 
-# V2ex（非著名技术论坛
+// V2ex（非著名技术论坛
 v2ex.com
 www.v2ex.com
 cdn.v2ex.com
-# V2ex
+// V2ex
 
-# Wallpaper（壁纸网站
+// Wallpaper（壁纸网站
 wall.alphacoders.com
 static.alphacoders.com
 images.alphacoders.com
@@ -58,15 +58,15 @@ images5.alphacoders.com
 images6.alphacoders.com
 images7.alphacoders.com
 images8.alphacoders.com
-# Wallpaper
+// Wallpaper
 
-# hCaptcha（国外著名验证码网站
+// hCaptcha（国外著名验证码网站
 hcaptcha.com
 assets.hcaptcha.com
 imgs.hcaptcha.com
-# hCaptcha
+// hCaptcha
 
-# Discord（国外著名游戏开黑平台
+// Discord（国外著名游戏开黑平台
 discord.com
 discordapp.com
 dl.discordapp.net
@@ -78,25 +78,45 @@ images-ext-2.discordapp.net
 images-ext-1.discordapp.net
 discordcdn.com
 support.discordapp.com
-# Discord
+// Discord
 
-# Faceit、EasyAntiCheat（提高反作弊程序的更新/加载速度
+// Faceit、EasyAntiCheat（提高反作弊程序的更新/加载速度
 faceit-client.faceit-cdn.net
 anticheat-client.faceit-cdn.net
 download-alt.easyanticheat.net
-# Faceit、EasyAntiCheat
+// Faceit、EasyAntiCheat
 
-# GreenManGaming（国外游戏商店
+// GreenManGaming（国外游戏商店
 api.greenmangaming.com
 images.greenmangaming.com
 media.greenmangaming.com
 www.greenmangaming.com
-# GreenManGaming
+// GreenManGaming
 
-# WeMOD（国外游戏修改器平台
+// WeMOD（国外游戏修改器平台
 www.wemod.com
 api.wemod.com
 storage-cdn.wemod.com
 community.wemod.com
-# WeMOD
+// WeMOD
 
+shopify.com
+time.is
+icook.hk
+icook.tw
+ip.sb
+japan.com
+malaysia.com
+russia.com
+singapore.com
+skk.moe
+
+
+www.visa.com.sg
+www.visa.com.hk
+www.visa.com.tw
+www.visa.co.jp
+www.visakorea.com
+www.gco.gov.qa
+www.gov.se
+www.gov.ua
