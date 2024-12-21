@@ -56,15 +56,7 @@ videodelivery.net
 store.ubi.com
 // Uplay
 
-// Epic（仅登录时的验证码
-client-api.arkoselabs.com
-epic-games-api.arkoselabs.com
-cdn.arkoselabs.com
-prod-ireland.arkoselabs.com
-// Epic
-
 // 一些个人博客
-www.423down.com
 apphot.cc
 // 一些个人博客
 
@@ -120,13 +112,6 @@ faceit-client.faceit-cdn.net
 anticheat-client.faceit-cdn.net
 download-alt.easyanticheat.net
 // Faceit、EasyAntiCheat
-
-// GreenManGaming（国外游戏商店
-api.greenmangaming.com
-images.greenmangaming.com
-media.greenmangaming.com
-www.greenmangaming.com
-// GreenManGaming
 
 // WeMOD（国外游戏修改器平台
 www.wemod.com
