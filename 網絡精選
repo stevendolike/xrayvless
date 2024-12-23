@@ -9,9 +9,6 @@
 172.67.38.198#每日精选
 172.67.47.180#每日精选
 
-
-
-
 cf.090227.xyz#CM三网优选
 ct.090227.xyz#CM电信优选
 cmcc.090227.xyz#CM移动优选
@@ -121,3 +118,10 @@ storage-cdn.wemod.com
 community.wemod.com
 // WeMOD
 
+# Epic（仅登录时的验证码
+www.epicgames.com
+client-api.arkoselabs.com
+epic-games-api.arkoselabs.com
+cdn.arkoselabs.com
+prod-ireland.arkoselabs.com
+# Epic
