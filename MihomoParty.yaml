@@ -38,7 +38,7 @@ proxy-groups:
   - {name: 狮城节点, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "新加|坡|SG|(?i)Singapore", icon: https://ghp.ci/https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png }
   - {name: 韩国节点, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "韩|KR|(?i)Korea", icon: https://ghp.ci/https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png }
   - {name: 波兰节点, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "波|PL|(?i)Poland", icon: https://ghp.ci/https://github.com/Koolson/Qure/blob/master/IconSet/Color/European_Union.png }
-  - {name: 官方优选, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "官方|防|电信|联通|移动|CT|CU|CM|CF|t.me|WARP|Warp|warp|IPV6|Tg|收费|频道", icon: https://ghp.ci/https://github.com/Koolson/Qure/blob/master/IconSet/Color/Cloudflare.png }
+  - {name: 官方优选, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "官方|防|电信|联通|移动|CT|CU|CM|CF|t.me|WARP|Warp|warp|IPV6|Tg|收费|频道|精選|精选", icon: https://ghp.ci/https://github.com/Koolson/Qure/blob/master/IconSet/Color/Cloudflare.png }
 
 
 # 分流规则 
