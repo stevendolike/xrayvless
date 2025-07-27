@@ -24,7 +24,7 @@ http-request ^https:\/\/wmapp-api\.waimaimingtang\.com\/api\/api\/v2\/user\/api_
 
 # > 小蚕霸王餐
 # hostname = gw.xiaocantech.com
-http-response ^https:\/\/gw\.xiaocantech\.com\/rpc url script-path=https://gist.githubusercontent.com/Sliverkiss/250a02315f0a2c99f42da3b3573375c8/raw, requires-body=true, timeout=60, tag=小蚕霸王餐
+http-response ^https:\/\/gw\.xiaocantech\.com\/rpc url script-path=https://gist.githubusercontent.com/Sliverkiss/250a02315f0a2c99f42da3b3573375c8/raw/xcbwc.js, requires-body=true, timeout=60, tag=小蚕霸王餐
 
 [MITM]
 hostname = auth.alipan.com, auth.aliyundrive.com, passport.biligame.com, manga.bilibili.com, *.bilibili.com, hweb-personalcenter.huazhu.com, xxyx-client-api.xiaoxiaoyouxuan.com, wmapp-api.waimaimingtang.com, gw.xiaocantech.com
