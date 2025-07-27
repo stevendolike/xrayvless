@@ -7,6 +7,7 @@
 http-request ^https:\/\/(auth|aliyundrive)\.alipan\.com\/v2\/account\/token script-path=https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js, requires-body=true, timeout=60, tag=阿里云盘@Sliverkiss
 
 # > 哔哩哔哩
+# hostname = passport.biligame.com, manga.bilibili.com, *.bilibili.com
 http-request ^https:\/\/(www|live)\.bilibili\.com\/?.? script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.cookie.js, timeout=60, tag=哔哩哔哩@chavyleung
 
 # > 华住会
@@ -25,3 +26,5 @@ http-response ^https:\/\/xxyx-client-api\.xiaoxiaoyouxuan\.com\/my script-path=h
 # hostname = gw.xiaocantech.com
 ^https:\/\/gw\.xiaocantech\.com\/rpc url script-response-body https://gist.githubusercontent.com/Sliverkiss/250a02315f0a2c99f42da3b3573375c8/raw, requires-body=true, timeout=60, tag=小蚕霸王餐
 
+[MITM]
+hostname = auth.alipan.com, auth.aliyundrive.com, passport.biligame.com, manga.bilibili.com, *.bilibili.com, hweb-personalcenter.huazhu.com, xxyx-client-api.xiaoxiaoyouxuan.com, wmapp-api.waimaimingtang.com, gw.xiaocantech.com
