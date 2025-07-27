@@ -20,7 +20,7 @@ http-request ^https?:\/\/mall\.meituan\.com\/api\/c\/mallcoin\/checkIn\/queryTas
 
 # > 小蚕霸王餐
 # hostname = gw.xiaocantech.com
-http-response ^https:\/\/gw\.xiaocantech\.com\/rpc url https://gist.githubusercontent.com/Sliverkiss/250a02315f0a2c99f42da3b3573375c8/raw/xcbwc.js, requires-body=true, timeout=60, tag=小蚕霸王餐
+http-response ^https:\/\/gw\.xiaocantech\.com\/rpc script-path=https://gist.githubusercontent.com/Sliverkiss/250a02315f0a2c99f42da3b3573375c8/raw/xcbwc.js, requires-body=true, timeout=60, tag=小蚕霸王餐
 
 # > 歪麦霸王餐
 # hostname = wmapp-api.waimaimingtang.com
