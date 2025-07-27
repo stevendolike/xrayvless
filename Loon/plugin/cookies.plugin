@@ -14,17 +14,25 @@ http-request ^https:\/\/(www|live)\.bilibili\.com\/?.? script-path=https://raw.g
 # hostname = hweb-personalcenter.huazhu.com
 http-request ^https?:\/\/hweb-personalcenter\.huazhu\.com\/login\/autoLogin$ script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/hzh.js, requires-body=true, timeout=60, tag=华住会
 
-# > 晓晓优选
-# hostname = xxyx-client-api.xiaoxiaoyouxuan.com
-http-response ^https:\/\/xxyx-client-api\.xiaoxiaoyouxuan\.com\/my script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cookie/get_cookie.js, requires-body=true, timeout=60, tag=晓晓优选
+# > 美团买菜
+# hostname = mall.meituan.com
+http-request ^https?:\/\/mall\.meituan\.com\/api\/c\/mallcoin\/checkIn\/queryTaskListInfoV.\? script-path=https://raw.githubusercontent.com/JoJoJotarou/myScript/master/script/meituan/mall.meituan.cookie.js, requires-body=true, timeout=60, tag=美团买菜
+
+# > 小蚕霸王餐
+# hostname = gw.xiaocantech.com
+http-response ^https:\/\/gw\.xiaocantech\.com\/rpc url https://gist.githubusercontent.com/Sliverkiss/250a02315f0a2c99f42da3b3573375c8/raw/xcbwc.js, requires-body=true, timeout=60, tag=小蚕霸王餐
 
 # > 歪麦霸王餐
 # hostname = wmapp-api.waimaimingtang.com
 http-request ^https:\/\/wmapp-api\.waimaimingtang\.com\/api\/api\/v2\/user\/api_user_info_one  script-path=https://gist.githubusercontent.com/Sliverkiss/49a9ffb2169a2becc33bf4fdbf6eb99a/raw/wmbwc.js, requires-body=true, timeout=60, tag=歪麦霸王餐
 
-# > 小蚕霸王餐
-# hostname = gw.xiaocantech.com
-http-response ^https:\/\/gw\.xiaocantech\.com\/rpc url script-path=https://gist.githubusercontent.com/Sliverkiss/250a02315f0a2c99f42da3b3573375c8/raw/xcbwc.js, requires-body=true, timeout=60, tag=小蚕霸王餐
+# > 晓晓优选
+# hostname = xxyx-client-api.xiaoxiaoyouxuan.com
+http-response ^https:\/\/xxyx-client-api\.xiaoxiaoyouxuan\.com\/my script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cookie/get_cookie.js, requires-body=true, timeout=60, tag=晓晓优选
+
+
+
+
 
 [MITM]
-hostname = auth.alipan.com, auth.aliyundrive.com, passport.biligame.com, manga.bilibili.com, *.bilibili.com, hweb-personalcenter.huazhu.com, xxyx-client-api.xiaoxiaoyouxuan.com, wmapp-api.waimaimingtang.com, gw.xiaocantech.com
+hostname = auth.alipan.com, auth.aliyundrive.com, passport.biligame.com, manga.bilibili.com, *.bilibili.com, hweb-personalcenter.huazhu.com, xxyx-client-api.xiaoxiaoyouxuan.com, wmapp-api.waimaimingtang.com, gw.xiaocantech.com, mall.meituan.com
