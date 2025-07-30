@@ -1,7 +1,9 @@
 #!name=获取cookie&token合集
 #!icon=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/others/cookie.png
-[Script]
+#!desc=阿里云盘，高德地图，华住会，美团买菜，小蚕霸王餐，歪麦霸王餐，晓晓优选获取cookie&token
 
+
+[Script]
 # > 阿里云盘
 # hostname = auth.alipan.com, auth.aliyundrive.com
 http-request ^https:\/\/(auth|aliyundrive)\.alipan\.com\/v2\/account\/token script-path=https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js, requires-body=true, timeout=60, tag=阿里云盘@Sliverkiss
