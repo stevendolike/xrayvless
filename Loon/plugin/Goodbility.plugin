@@ -6,13 +6,8 @@
 [Rewrite]
 ^https:\/\/isi\.csan\.goodnotes.*\/v1\/subscribers\/[a-f0-9\-]{36}$ header https://goodenotes6.lovebabyforever.workers.dev/
 
-[MITM]
-hostname = isi.csan.goodnotes.com.*, isi.csan.goodnotes.com
-
-
 [Script]
 http-response ^https?:\/\/notability\.com\/(global|subscriptions) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Notability.js, requires-body=true, timeout=60, tag=Notability
 
 [MITM]
-hostname = notability.com
-
+hostname = isi.csan.goodnotes.com.*, isi.csan.goodnotes.com, notability.com
