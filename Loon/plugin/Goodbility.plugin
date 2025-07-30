@@ -1,0 +1,10 @@
+#!name=Goodbility
+#!desc=解锁GoodNotes&Notability内购会员 
+#!author=
+#!icon=https://raw.githubusercontent.com/stevendolike/xrayvless/refs/heads/main/Loon/icon/goodnote.png
+
+[Rewrite]
+^https:\/\/isi\.csan\.goodnotes.*\/v1\/subscribers\/[a-f0-9\-]{36}$ header https://goodenotes6.lovebabyforever.workers.dev/
+
+[MITM]
+hostname = isi.csan.goodnotes.com.*, isi.csan.goodnotes.com
