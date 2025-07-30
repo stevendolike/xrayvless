@@ -3,6 +3,7 @@
 #!icon=https://raw.githubusercontent.com/stevendolike/xrayvless/refs/heads/main/Loon/icon/56f5rt1j.png
 #!author= @𝒃𝒂𝒃𝒚
 #!homepage= https://t.me/Jsforbaby
+#!input = https://apps.apple.com/app/id1642455052
 
 [Script]
 http-response ^https?:\/\/(?:edu|user)\.lezaitizhong\.com script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/lanjiyin.js, requires-body=true, timeout=60, tag=lanjiyin
