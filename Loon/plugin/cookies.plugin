@@ -16,14 +16,6 @@ http-response ^https?:\/\/(m5(|-zb)|dache)\.amap\.com\/(ws\/yuece\/(act|openapi\
 # hostname = hweb-personalcenter.huazhu.com
 http-request ^https?:\/\/hweb-personalcenter\.huazhu\.com\/login\/autoLogin$ script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/hzh.js, requires-body=true, timeout=60, tag=华住会
 
-# > 美团
-# 进入“完善资料”，这一步可以获取到用户ID用于更新多账号信息
-http-response https://open.meituan.com/user/v1/info/auditting script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cookie/get_cookie.js, requires-body=true, timeout=60, tag=美团token
-
-# > 美团外卖
-# hostname = 
-http-request ^https:\/\/promotion.waimai.meituan.com\/playcenter\/signIn\/(entry|doaction) script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wmmeituan/wmmeituan.cookie.js, timeout=60, tag=美团外卖
-
 # > 美团买菜
 # hostname = mall.meituan.com
 http-request ^https?:\/\/mall\.meituan\.com\/api\/c\/mallcoin\/checkIn\/queryTaskListInfoV.\? script-path=https://raw.githubusercontent.com/JoJoJotarou/myScript/master/script/meituan/mall.meituan.cookie.js, timeout=60, tag=美团买菜
