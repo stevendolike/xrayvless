@@ -16,10 +16,10 @@ proxy-groups:
 #分流分组
   - {name: 🚀 Global, type: select, proxies: [☑️ SELECT, ♻️ AUTO, 🇭🇰 Hong Kong, 🇯🇵 Japan, 🇰🇷 Korea, 🇸🇬 Singapore, 🇹🇼 Taiwan, 🇺🇲 United States, DIRECT], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png }  
   - {name: 🎥 Media, type: select, proxies: [☑️ SELECT, ♻️ AUTO, 🇭🇰 Hong Kong, 🇯🇵 Japan, 🇰🇷 Korea, 🇸🇬 Singapore, 🇹🇼 Taiwan, 🇺🇲 United States, DIRECT], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Streaming.png }
-  - {name: 🤖 OpenAi,   type: select, proxies: [☑️ SELECT, ♻️ AUTO, 🇭🇰 Hong Kong, 🇯🇵 Japan, 🇰🇷 Korea, 🇸🇬 Singapore, 🇹🇼 Taiwan, 🇺🇲 United States, DIRECT], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png }
-  - {name: 🐟 Final, type: select, proxies: [Global, ☑️ SELECT, ♻️ AUTO, 🇭🇰 Hong Kong, 🇯🇵 Japan, 🇰🇷 Korea, 🇸🇬 Singapore, 🇹🇼 Taiwan, 🇺🇲 United States, DIRECT], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Final.png }
+  - {name: 🤖 OpenAi, type: select, proxies: [☑️ SELECT, ♻️ AUTO, 🇭🇰 Hong Kong, 🇯🇵 Japan, 🇰🇷 Korea, 🇸🇬 Singapore, 🇹🇼 Taiwan, 🇺🇲 United States, DIRECT], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png }
+  - {name: 🐟 Final, type: select, proxies: [🚀 Global, ☑️ SELECT, ♻️ AUTO, 🇭🇰 Hong Kong, 🇯🇵 Japan, 🇰🇷 Korea, 🇸🇬 Singapore, 🇹🇼 Taiwan, 🇺🇲 United States, DIRECT], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Final.png }
   - {name: ☑️ SELECT, type: select, include-all: true, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png }
-  
+ 
 #节点分组
   - {name: ♻️ AUTO, type: url-test, include-all: true, interval: 600, tolerance: 50,  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Urltest.png }
   - {name: 🇭🇰 Hong Kong, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "港|HK|(?i)Hong", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png }             
