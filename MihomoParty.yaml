@@ -14,25 +14,23 @@
 
 proxy-groups:
 #分流分组
-  - {name: SELECT, type: select, include-all: true, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png }
-  - {name: Global, type: select, proxies: [SELECT, DIRECT, AUTO, Hong Kong, Japan, Taiwan, United States, Singapore, Korea], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png }  
-  - {name: OpenAi,   type: select, proxies: [SELECT, Hong Kong, Japan, Taiwan, United States, Singapore, Korea], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png }
-  - {name: Media, type: select, proxies: [SELECT, DIRECT, AUTO, Hong Kong, Japan, Taiwan, United States, Singapore, Korea], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Streaming.png }
-  - {name: AdBlock,  type: select, proxies: [REJECT, DIRECT], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Adblock.png }  
-  - {name: Final, type: select, proxies: [Global, SELECT, DIRECT, AUTO, Hong Kong, Japan, Taiwan, United States, Singapore, Korea], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Final.png }
+  - {name: 🚀 Global, type: select, proxies: [☑️ SELECT, ♻️ AUTO, 🇭🇰 Hong Kong, 🇯🇵 Japan, 🇰🇷 Korea, 🇸🇬 Singapore, 🇹🇼 Taiwan, 🇺🇲 United States, DIRECT], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png }  
+  - {name: 🎥 Media, type: select, proxies: [[☑️ SELECT, ♻️ AUTO, 🇭🇰 Hong Kong, 🇯🇵 Japan, 🇰🇷 Korea, 🇸🇬 Singapore, 🇹🇼 Taiwan, 🇺🇲 United States, DIRECT], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Streaming.png }
+  - {name: 🤖 OpenAi,   type: select, proxies: [[☑️ SELECT, ♻️ AUTO, 🇭🇰 Hong Kong, 🇯🇵 Japan, 🇰🇷 Korea, 🇸🇬 Singapore, 🇹🇼 Taiwan, 🇺🇲 United States, DIRECT], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png }
+  - {name: 🐟 Final, type: select, proxies: [Global, [☑️ SELECT, ♻️ AUTO, 🇭🇰 Hong Kong, 🇯🇵 Japan, 🇰🇷 Korea, 🇸🇬 Singapore, 🇹🇼 Taiwan, 🇺🇲 United States, DIRECT], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Final.png }
+  - {name: ☑️ SELECT, type: select, include-all: true, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png }
   
 #节点分组
-  - {name: AUTO, type: url-test, include-all: true, interval: 600, tolerance: 50,  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Urltest.png }
-  - {name: Hong Kong, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "港|HK|(?i)Hong", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png }             
-  - {name: Japan, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "日本|东京|JP|(?i)Japan", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png }
-  - {name: Korea, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "韩|KR|(?i)Korea", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png }
-  - {name: Singapore, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "新加|坡|SG|(?i)Singapore", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png }
-  - {name: Taiwan, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "台|湾|TW|(?i)Taiwan", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png }
-  - {name: United States, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "美|US|(?i)States|American", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png }
+  - {name: ♻️ AUTO, type: url-test, include-all: true, interval: 600, tolerance: 50,  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Urltest.png }
+  - {name: 🇭🇰 Hong Kong, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "港|HK|(?i)Hong", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png }             
+  - {name: 🇯🇵 Japan, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "日本|东京|JP|(?i)Japan", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png }
+  - {name: 🇰🇷 Korea, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "韩|KR|(?i)Korea", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png }
+  - {name: 🇸🇬 Singapore, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "新加|坡|SG|(?i)Singapore", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png }
+  - {name: 🇹🇼 Taiwan, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "台|湾|TW|(?i)Taiwan", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png }
+  - {name: 🇺🇲 United States, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "美|US|(?i)States|American", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png }
 
 # 分流规则 
 rule-providers:
-  AdBlock:     {behavior: domain,    interval: 86400, format: text, type: http, url: https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules_domainset.txt ,                                           path: ./ruleset/anti-ad-clash.txt }
   OpenAi1:      {behavior: classical, interval: 86400, format: yaml, type: http, url: https://gist.githubusercontent.com/ddgksf2013/cb4121e8b5c5d865cc949cb8120320c4/raw/Ai.yaml ,                               path: ./ruleset/OpenAi1.yaml       }
   OpenAi2:      {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/juewuy/ShellCash/master/lrules/ai.list ,                               path: ./ruleset/OpenAi2.yaml       }
   OpenAi3:      {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Gemini/Gemini.yaml ,                               path: ./ruleset/OpenAi3.yaml       }
@@ -45,15 +43,14 @@ rule-providers:
 
 # 分流Policy 
 rules:
-  - RULE-SET,AdBlock,AdBlock
-  - RULE-SET,OpenAi1,OpenAi
-  - RULE-SET,OpenAi2,OpenAi
-  - RULE-SET,OpenAi3,OpenAi
-  - RULE-SET,GlobalMedia,Media
-  - RULE-SET,ProxyLite,Global
+  - RULE-SET,OpenAi1,🤖 OpenAi
+  - RULE-SET,OpenAi2,🤖 OpenAi
+  - RULE-SET,OpenAi3,🤖 OpenAi
+  - RULE-SET,GlobalMedia,🎥 Media
+  - RULE-SET,ProxyLite,🚀 Global
   - RULE-SET,ChinaIP,DIRECT
   - RULE-SET,Direct,DIRECT
   - RULE-SET,Lan,DIRECT
   - RULE-SET,Download,DIRECT
   - GEOIP,CN,DIRECT
-  - MATCH,Final
+  - MATCH,🐟 Final
