@@ -25,10 +25,10 @@ proxy-groups:
   - {name: AUTO, type: url-test, include-all: true, interval: 600, tolerance: 50,  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Urltest.png }
   - {name: Hong Kong, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "港|HK|(?i)Hong", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png }             
   - {name: Japan, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "日本|东京|JP|(?i)Japan", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png }
+  - {name: Korea, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "韩|KR|(?i)Korea", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png }
+  - {name: Singapore, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "新加|坡|SG|(?i)Singapore", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png }
   - {name: Taiwan, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "台|湾|TW|(?i)Taiwan", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png }
   - {name: United States, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "美|US|(?i)States|American", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png }
-  - {name: Singapore, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "新加|坡|SG|(?i)Singapore", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png }
-  - {name: Korea, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "韩|KR|(?i)Korea", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png }
 
 # 分流规则 
 rule-providers:
