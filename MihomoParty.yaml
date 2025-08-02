@@ -8,14 +8,14 @@ proxy-groups:
   - {name: ☑️ SELECT, type: select, include-all: true}
  
 #节点分组
-  - {name: ♻️ AUTO, type: url-test, include-all: true, interval: 600, tolerance: 50,  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Urltest.png }
-  - {name: 🇭🇰 Hong Kong, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "港|HK|(?i)Hong", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png }             
-  - {name: 🇯🇵 Japan, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "日本|东京|JP|(?i)Japan", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png }
-  - {name: 🇰🇷 Korea, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "韩|KR|(?i)Korea", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png }
-  - {name: 🇸🇬 Singapore, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "新加|坡|SG|(?i)Singapore", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png }
-  - {name: 🇹🇼 Taiwan, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "台|湾|TW|(?i)Taiwan", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png }
-  - {name: 🇺🇲 United States, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "美|US|(?i)States|American", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png }
-
+  - {name: ♻️ AUTO, type: url-test, include-all: true, interval: 600, tolerance: 50}
+  - {name: 🇭🇰 Hong Kong, type: url-test, include-all: true, interval: 600, tolerance: 50, filter: "港|HK|(?i)Hong"}
+  - {name: 🇯🇵 Japan, type: url-test, include-all: true, interval: 600, tolerance: 50, filter: "日本|东京|JP|(?i)Japan"}
+  - {name: 🇰🇷 Korea, type: url-test, include-all: true, interval: 600, tolerance: 50, filter: "韩|KR|(?i)Korea"}
+  - {name: 🇸🇬 Singapore, type: url-test, include-all: true, interval: 600, tolerance: 50, filter: "新加|坡|SG|(?i)Singapore"}
+  - {name: 🇹🇼 Taiwan, type: url-test, include-all: true, interval: 600, tolerance: 50, filter: "台|湾|TW|(?i)Taiwan"}
+  - {name: 🇺🇲 United States, type: url-test, include-all: true, interval: 600, tolerance: 50, filter: "美|US|(?i)States|American"}
+  
 # 分流规则 
 rule-providers:
   OpenAi1:      {behavior: classical, interval: 86400, format: yaml, type: http, url: https://gist.githubusercontent.com/ddgksf2013/cb4121e8b5c5d865cc949cb8120320c4/raw/Ai.yaml ,                               path: ./ruleset/OpenAi1.yaml       }
