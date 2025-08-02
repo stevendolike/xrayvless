@@ -35,11 +35,11 @@ rule-providers:
 
 # 分流Policy 
 rules:
-  - RULE-SET,Bing,🚀 Global
   - RULE-SET,OpenAi1,🤖 OpenAi
   - RULE-SET,OpenAi2,🤖 OpenAi
   - RULE-SET,OpenAi3,🤖 OpenAi
   - RULE-SET,GlobalMedia,🎥 Media
+  - RULE-SET,Bing,🚀 Global
   - RULE-SET,ProxyLite,🚀 Global
   - RULE-SET,ProxyGFWlist,🚀 Global
   - RULE-SET,Proxy,🚀 Global
