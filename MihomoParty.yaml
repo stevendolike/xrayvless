@@ -48,6 +48,7 @@ rules:
   - RULE-SET,AdBlock,AdBlock
   - RULE-SET,OpenAi1,OpenAi
   - RULE-SET,OpenAi2,OpenAi
+  - RULE-SET,OpenAi3,OpenAi
   - RULE-SET,GlobalMedia,Media
   - RULE-SET,ProxyLite,Global
   - RULE-SET,ChinaIP,DIRECT
