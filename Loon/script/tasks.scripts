@@ -7,11 +7,11 @@
 #!date=2025-07-30 10:10:00
 
 
-cron "1 7,11,17 * * *" script-path=https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js, timeout=300, enable=false, tag=阿里云盘
-cron "2 0 * * *" script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js, timeout=300, enable=false, tag=高德地图
-cron "3 0 * * *" script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/hzh.js, timeout=300, enable=false, tag=华住会
+cron "1 7,11,17 * * *" script-path=https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js, timeout=300, enable=true, tag=阿里云盘
+cron "2 0 * * *" script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js, timeout=300, enable=true, tag=高德地图
+cron "3 0 * * *" script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/hzh.js, timeout=300, enable=true, tag=华住会
 
-cron "4 0,2 * * *" script-path=https://raw.githubusercontent.com/JoJoJotarou/myScript/master/script/meituan/mall.meituan.mallcoin.task.js, timeout=300, enable=false, tag=美团买菜
-cron "5 0,1 * * *" script-path=https://gist.githubusercontent.com/Sliverkiss/250a02315f0a2c99f42da3b3573375c8/raw/xcbwc.js, timeout=300, enable=false, tag=小蚕霸王餐
-cron "6 0 * * *" script-path=https://gist.githubusercontent.com/Sliverkiss/49a9ffb2169a2becc33bf4fdbf6eb99a/raw/wmbwc.js, timeout=300, enable=false, tag=歪麦霸王餐
-cron "7 0 * * *" script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/xxyx/xxyx_signin.js, timeout=300, enable=false, tag=晓晓优选
+cron "4 0,2 * * *" script-path=https://raw.githubusercontent.com/JoJoJotarou/myScript/master/script/meituan/mall.meituan.mallcoin.task.js, timeout=300, enable=true, tag=美团买菜
+cron "5 0,1 * * *" script-path=https://gist.githubusercontent.com/Sliverkiss/250a02315f0a2c99f42da3b3573375c8/raw/xcbwc.js, timeout=300, enable=true, tag=小蚕霸王餐
+cron "6 0 * * *" script-path=https://gist.githubusercontent.com/Sliverkiss/49a9ffb2169a2becc33bf4fdbf6eb99a/raw/wmbwc.js, timeout=300, enable=true, tag=歪麦霸王餐
+cron "7 0 * * *" script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/xxyx/xxyx_signin.js, timeout=300, enable=true, tag=晓晓优选
