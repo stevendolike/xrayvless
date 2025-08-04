@@ -11,55 +11,55 @@
 
 [Argument]
 # 阿里云盘
-Cookie-alipan = switch, false, tag = [阿里云盘]每日签到Token, desc = 获取[阿里云盘]每日签到Token
-Task-alipan = switch, false, tag = [阿里云盘]每日签到Task, desc = 定时运行[阿里云盘]每日签到Task
+Cookie-alipan = switch, false, tag = [阿里云盘]Token, desc = 获取[阿里云盘]每日签到Token
+Task-alipan = switch, true, tag = [阿里云盘]Task, desc = 定时运行[阿里云盘]每日签到Task
 Cron-alipan = input, "0 0 9 * * *", tag = [阿里云盘]定时参数Cron, desc = 输入Cron表达式来定时运行[阿里云盘]每日签到Task
 
 # 高德地图
 Cookie-amap = switch, false, tag = [高德地图]Cookie, desc = 获取[高德地图]Cookie
-Task-amap = switch, false, tag = [高德地图]打车签到Task, desc = 定时运行[高德地图]打车签到Task
+Task-amap = switch, true, tag = [高德地图]Task, desc = 定时运行[高德地图]打车签到Task
 Cron-amap = input, "2 0 * * *", tag = [高德地图]定时参数Cron, desc = 输入Cron表达式来定时运行[高德地图]打车签到Task
 
 # 华住会
 Cookie-huazhu = switch, false, tag = [华住会]Cookie, desc = 获取[华住会]Cookie
-Task-huazhu = switch, false, tag = [华住会]Task, desc = 定时运行[华住会]Task
+Task-huazhu = switch, true, tag = [华住会]Task, desc = 定时运行[华住会]Task
 Cron-huazhu = input, "1 0 * * *", tag = [华住会]定时参数Cron, desc = 输入Cron表达式来定时运行[华住会]Task
 
 # 美团买菜
 Cookie-meituan = switch, false, tag = [美团买菜]Cookie, desc = 获取[美团买菜]Cookie
-Task-meituan = switch, false, tag = [美团买菜]Task, desc = 定时运行[美团买菜]Task
+Task-meituan = switch, true, tag = [美团买菜]Task, desc = 定时运行[美团买菜]Task
 Cron-meituan = input, "6 0,2 * * *", tag = [美团买菜]定时参数Cron, desc = 输入Cron表达式来定时运行[美团买菜]Task
 
 # 小蚕霸王餐
 Cookie-xiaocan = switch, false, tag = [小蚕霸王餐]Cookie, desc = 获取[小蚕霸王餐]Cookie
-Task-xiaocan = switch, false, tag = [小蚕霸王餐]Task, desc = 定时运行[小蚕霸王餐]Task
+Task-xiaocan = switch, true, tag = [小蚕霸王餐]Task, desc = 定时运行[小蚕霸王餐]Task
 Cron-xiaocan = input, "4 0,1 * * *", tag = [小蚕霸王餐]定时参数Cron, desc = 输入Cron表达式来定时运行[小蚕霸王餐]Task
 
 # 歪麦霸王餐
 Cookie-waimai = switch, false, tag = [歪麦霸王餐]Cookie, desc = 获取[歪麦霸王餐]Cookie
-Task-waimai = switch, false, tag = [歪麦霸王餐]Task, desc = 定时运行[歪麦霸王餐]Task
+Task-waimai = switch, true, tag = [歪麦霸王餐]Task, desc = 定时运行[歪麦霸王餐]Task
 Cron-waimai = input, "10 0 * * *", tag = [歪麦霸王餐]定时参数Cron, desc = 输入Cron表达式来定时运行[歪麦霸王餐]Task
 
 # 晓晓优选
 Cookie-xiaoxiao = switch, false, tag = [晓晓优选]Cookie, desc = 获取[晓晓优选]Cookie
-Task-xiaoxiao = switch, false, tag = [晓晓优选]Task, desc = 定时运行[晓晓优选]Task
+Task-xiaoxiao = switch, true, tag = [晓晓优选]Task, desc = 定时运行[晓晓优选]Task
 Cron-xiaoxiao = input, "5 0 * * *", tag = [晓晓优选]定时参数Cron, desc = 输入Cron表达式来定时运行[晓晓优选]Task
 
 # Bilibili
-Cookie-bilibiliapp = switch, true, tag = [哔哩哔哩App]每日等级任务Token, desc = 获取[哔哩哔哩App]每日等级任务Token
-Cookie-bilibiliqrcode = switch, false, tag = [哔哩哔哩QR Code]每日等级任务Token, desc = 获取[哔哩哔哩QR Code]每日等级任务Token
-Task-bilibili = switch, true, tag = [哔哩哔哩]每日等级任务Task, desc = 定时运行[哔哩哔哩]每日等级任务Task
+Cookie-bilibiliapp = switch, true, tag = [哔哩哔哩App]Token, desc = 获取[哔哩哔哩App]每日等级任务Token
+Cookie-bilibiliqrcode = switch, false, tag = [哔哩哔哩QR Code]Token, desc = 获取[哔哩哔哩QR Code]每日等级任务Token
+Task-bilibili = switch, true, tag = [哔哩哔哩]Task, desc = 定时运行[哔哩哔哩]每日等级任务Task
 Cron-bilibili = input, "30 7 * * *", tag = [哔哩哔哩]定时参数Cron, desc = 输入Cron表达式来定时运行[哔哩哔哩]每日等级任务Task
 BigPoint-bilibili = switch, false, tag = [哔哩哔哩]观看剧集大积分, desc = 定时运行[哔哩哔哩]观看剧集大积分Task
 
 [Script]
 # 阿里云盘
-http-request ^https:\/\/(auth|aliyundrive)\.alipan\.com\/v2\/account\/token script-path=https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js, requires-body=true, timeout=60, tag=[阿里云盘]每日签到Token, enable={Cookie-alipan}
-cron {Cron-alipan} script-path=https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js, timeout=300, tag=[阿里云盘]每日签到Task, enable={Task-alipan}
+http-request ^https:\/\/(auth|aliyundrive)\.alipan\.com\/v2\/account\/token script-path=https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js, requires-body=true, timeout=60, tag=[阿里云盘]Token, enable={Cookie-alipan}
+cron {Cron-alipan} script-path=https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js, timeout=300, tag=[阿里云盘]Task, enable={Task-alipan}
 
 # 高德地图
 http-response ^https?:\/\/(m5(|-zb)|dache)\.amap\.com\/(ws\/yuece\/(act|openapi\/activity\/current)\/query|common\/(alipaymini|wxmini)\?_ENCRYPT=) script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js, requires-body=true, timeout=60, tag=[高德地图]Cookie, enable={Cookie-amap}
-cron {Cron-amap} script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js, timeout=300, tag=[高德地图]打车签到Task, enable={Task-amap}
+cron {Cron-amap} script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js, timeout=300, tag=[高德地图]Task, enable={Task-amap}
 
 # 华住会
 http-request ^https?:\/\/hweb-personalcenter\.huazhu\.com\/login\/autoLogin$ script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/hzh.js, requires-body=true, timeout=60, tag=[华住会]Cookie, enable={Cookie-huazhu}
@@ -82,9 +82,9 @@ http-response ^https:\/\/xxyx-client-api\.xiaoxiaoyouxuan\.com\/my script-path=h
 cron {Cron-xiaoxiao} script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/xxyx/xxyx_signin.js, timeout=300, tag=[晓晓优选]Task, enable={Task-xiaoxiao}
 
 # Bilibili
-http-request ^https?:\/\/app\.bilibili\.com\/x\/resource\/fingerprint\? script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, requires-body=true, timeout=30, tag=[哔哩哔哩App]每日等级任务Token, enable={Cookie-bilibiliapp}
-http-response ^https?:\/\/app\.bilibili\.com\/x\/resource\/fingerprint\? script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, requires-body=true, timeout=30, tag=[哔哩哔哩QR Code]每日等级任务Token, enable={Cookie-bilibiliqrcode}
-cron {Cron-bilibili} script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, timeout=15, tag=[哔哩哔哩]每日等级任务Task, enable={Task-bilibili}
+http-request ^https?:\/\/app\.bilibili\.com\/x\/resource\/fingerprint\? script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, requires-body=true, timeout=30, tag=[哔哩哔哩App]Token, enable={Cookie-bilibiliapp}
+http-response ^https?:\/\/app\.bilibili\.com\/x\/resource\/fingerprint\? script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, requires-body=true, timeout=30, tag=[哔哩哔哩QR Code]Token, enable={Cookie-bilibiliqrcode}
+cron {Cron-bilibili} script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, timeout=15, tag=[哔哩哔哩]Task, enable={Task-bilibili}
 cron "41 7 * * *" script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, timeout=15, tag=[哔哩哔哩]观看剧集大积分, enable={BigPoint-bilibili}
 
 [MITM]
