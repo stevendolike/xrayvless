@@ -3,13 +3,13 @@
 #!desc=阿里云盘，高德地图，华住会，美团买菜，小蚕霸王餐，歪麦霸王餐，晓晓优选获取cookie&token
 
 [Argument]
-阿里云盘 = switch,false,tag=阿里云盘Cookie,desc=是否启用此处修改
-高德地图 = switch,false,tag=高德地图Cookie,desc=是否启用此处修改
-华住会 = switch,false,tag=华住会Cookie,desc=是否启用此处修改
-美团买菜 = switch,false,tag=美团买菜Cookie,desc=是否启用此处修改
-小蚕霸王餐 = switch,false,tag=小蚕霸王餐Cookie,desc=是否启用此处修改
-歪麦霸王餐 = switch,false,tag=歪麦霸王餐Cookie,desc=是否启用此处修改
-晓晓优选 = switch,false,tag=晓晓优选Cookie,desc=是否启用此处修改
+阿里云盘 = switch,false,tag=阿里云盘 Cookie,desc=是否启用此处修改
+高德地图 = switch,false,tag=高德地图 Cookie,desc=是否启用此处修改
+华住会 = switch,false,tag=华住会 Cookie,desc=是否启用此处修改
+美团买菜 = switch,false,tag=美团买菜 Cookie,desc=是否启用此处修改
+小蚕霸王餐 = switch,false,tag=小蚕霸王餐 Cookie,desc=是否启用此处修改
+歪麦霸王餐 = switch,false,tag=歪麦霸王餐 Cookie,desc=是否启用此处修改
+晓晓优选 = switch,false,tag=晓晓优选 Cookie,desc=是否启用此处修改
 
 [Script]
 # > 阿里云盘
