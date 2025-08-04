@@ -1,5 +1,6 @@
 [General]
 name = MergedCookieTask
+#!desc = 自动完成每日签到任务，按需开启相应功能即可。具体使用方法请查看所引用脚本或插件内详细说明。
 version = 1.0.0
 author = FoKit, Sliverkiss, GoodHolidays, ZenmoFeiShi, NobyDa, ClydeTime, sooyaaabo, Merged by Grok
 description = Combined plugin for cookie acquisition and daily tasks for multiple services (阿里云盘, 高德地图, 华住会, 美团买菜, Bilibili, etc.)
