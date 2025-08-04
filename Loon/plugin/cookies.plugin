@@ -2,35 +2,43 @@
 #!icon=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/others/cookie.png
 #!desc=阿里云盘，高德地图，华住会，美团买菜，小蚕霸王餐，歪麦霸王餐，晓晓优选获取cookie&token
 
+[Argument]
+阿里云盘 = switch,false,tag=阿里云盘,desc=是否启用此处修改
+高德地图 = switch,false,tag=高德地图=是否启用此处修改
+华住会 = switch,false,tag=华住会,desc=是否启用此处修改
+美团买菜 = switch,false,tag=美团买菜,desc=是否启用此处修改
+小蚕霸王餐 = switch,false,tag=小蚕霸王餐,desc=是否启用此处修改
+歪麦霸王餐 = switch,false,tag=歪麦霸王餐,desc=是否启用此处修改
+晓晓优选 = switch,false,tag=晓晓优选,desc=是否启用此处修改
 
 [Script]
 # > 阿里云盘
 # hostname = auth.alipan.com, auth.aliyundrive.com
-http-request ^https:\/\/(auth|aliyundrive)\.alipan\.com\/v2\/account\/token script-path=https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js, requires-body=true, timeout=60, tag=阿里云盘@Sliverkiss
+http-request ^https:\/\/(auth|aliyundrive)\.alipan\.com\/v2\/account\/token script-path=https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js, requires-body=true, timeout=60, tag=阿里云盘@Sliverkiss, enable={阿里云盘}
 
 # > 高德地图
 # hostname = *.amap.com
-http-response ^https?:\/\/(m5(|-zb)|dache)\.amap\.com\/(ws\/yuece\/(act|openapi\/activity\/current)\/query|common\/(alipaymini|wxmini)\?_ENCRYPT=) script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js, requires-body=true, timeout=60, tag=高德地图
+http-response ^https?:\/\/(m5(|-zb)|dache)\.amap\.com\/(ws\/yuece\/(act|openapi\/activity\/current)\/query|common\/(alipaymini|wxmini)\?_ENCRYPT=) script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js, requires-body=true, timeout=60, tag=高德地图, enable={高德地图}
 
 # > 华住会
 # hostname = hweb-personalcenter.huazhu.com
-http-request ^https?:\/\/hweb-personalcenter\.huazhu\.com\/login\/autoLogin$ script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/hzh.js, requires-body=true, timeout=60, tag=华住会
+http-request ^https?:\/\/hweb-personalcenter\.huazhu\.com\/login\/autoLogin$ script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/hzh.js, requires-body=true, timeout=60, tag=华住会, enable={华住会}
 
 # > 美团买菜
 # hostname = mall.meituan.com
-http-request ^https?:\/\/mall\.meituan\.com\/api\/c\/mallcoin\/checkIn\/queryTaskListInfoV.\? script-path=https://raw.githubusercontent.com/JoJoJotarou/myScript/master/script/meituan/mall.meituan.cookie.js, timeout=60, tag=美团买菜
+http-request ^https?:\/\/mall\.meituan\.com\/api\/c\/mallcoin\/checkIn\/queryTaskListInfoV.\? script-path=https://raw.githubusercontent.com/JoJoJotarou/myScript/master/script/meituan/mall.meituan.cookie.js, timeout=60, tag=美团买菜, enable={美团买菜}
 
 # > 小蚕霸王餐
 # hostname = gw.xiaocantech.com
-http-response ^https:\/\/gw\.xiaocantech\.com\/rpc script-path=https://gist.githubusercontent.com/Sliverkiss/250a02315f0a2c99f42da3b3573375c8/raw/xcbwc.js, requires-body=true, timeout=60, tag=小蚕霸王餐
+http-response ^https:\/\/gw\.xiaocantech\.com\/rpc script-path=https://gist.githubusercontent.com/Sliverkiss/250a02315f0a2c99f42da3b3573375c8/raw/xcbwc.js, requires-body=true, timeout=60, tag=小蚕霸王餐, enable={小蚕霸王餐}
 
 # > 歪麦霸王餐
 # hostname = wmapp-api.waimaimingtang.com
-http-request ^https:\/\/wmapp-api\.waimaimingtang\.com\/api\/api\/v2\/user\/api_user_info_one  script-path=https://gist.githubusercontent.com/Sliverkiss/49a9ffb2169a2becc33bf4fdbf6eb99a/raw/wmbwc.js, requires-body=true, timeout=60, tag=歪麦霸王餐
+http-request ^https:\/\/wmapp-api\.waimaimingtang\.com\/api\/api\/v2\/user\/api_user_info_one  script-path=https://gist.githubusercontent.com/Sliverkiss/49a9ffb2169a2becc33bf4fdbf6eb99a/raw/wmbwc.js, requires-body=true, timeout=60, tag=歪麦霸王餐, enable={歪麦霸王餐}
 
 # > 晓晓优选
 # hostname = xxyx-client-api.xiaoxiaoyouxuan.com
-http-response ^https:\/\/xxyx-client-api\.xiaoxiaoyouxuan\.com\/my script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cookie/get_cookie.js, requires-body=true, timeout=60, tag=晓晓优选
+http-response ^https:\/\/xxyx-client-api\.xiaoxiaoyouxuan\.com\/my script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cookie/get_cookie.js, requires-body=true, timeout=60, tag=晓晓优选, enable={晓晓优选}
 
 
 
