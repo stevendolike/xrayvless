@@ -1,6 +1,6 @@
-#!name=获取cookie&token合集
+#!name=获取cookie合集
 #!icon=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/others/cookie.png
-#!desc=阿里云盘，高德地图，华住会，美团买菜，小蚕霸王餐，歪麦霸王餐，晓晓优选获取cookie&token
+#!desc=阿里云盘，高德地图，华住会，美团买菜，小蚕霸王餐，歪麦霸王餐，晓晓优选获取cookie
 
 [Argument]
 阿里云盘 = switch,false,tag=阿里云盘 Cookie,desc=是否启用此处修改
