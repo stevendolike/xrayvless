@@ -4,7 +4,7 @@
 
 [Argument]
 阿里云盘 = switch,false,tag=阿里云盘,desc=是否启用此处修改
-高德地图 = switch,false,tag=高德地图=是否启用此处修改
+高德地图 = switch,false,tag=高德地图,desc=是否启用此处修改
 华住会 = switch,false,tag=华住会,desc=是否启用此处修改
 美团买菜 = switch,false,tag=美团买菜,desc=是否启用此处修改
 小蚕霸王餐 = switch,false,tag=小蚕霸王餐,desc=是否启用此处修改
