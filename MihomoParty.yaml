@@ -45,9 +45,9 @@ rules:
   - RULE-SET,Proxy,🚀 Global
   - RULE-SET,CMBlog,🚀 Global
   - RULE-SET,Cloudflare,🚀 Global
+  - RULE-SET,Download,🚀 Global
   - RULE-SET,ChinaIP,DIRECT
   - RULE-SET,Direct,DIRECT
   - RULE-SET,Lan,DIRECT
-  - RULE-SET,Download,🚀 Global
   - GEOIP,CN,DIRECT
   - MATCH,🐟 Final
