@@ -39,13 +39,13 @@ rules:
   - RULE-SET,OpenAi2,🤖 OpenAi
   - RULE-SET,OpenAi3,🤖 OpenAi
   - RULE-SET,GlobalMedia,🎥 Media
+  - RULE-SET,Download,🚀 Global  
   - RULE-SET,Bing,🚀 Global
   - RULE-SET,ProxyLite,🚀 Global
   - RULE-SET,ProxyGFWlist,🚀 Global
   - RULE-SET,Proxy,🚀 Global
   - RULE-SET,CMBlog,🚀 Global
   - RULE-SET,Cloudflare,🚀 Global
-  - RULE-SET,Download,🚀 Global
   - RULE-SET,ChinaIP,DIRECT
   - RULE-SET,Direct,DIRECT
   - RULE-SET,Lan,DIRECT
