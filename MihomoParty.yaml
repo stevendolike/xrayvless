@@ -48,6 +48,6 @@ rules:
   - RULE-SET,ChinaIP,DIRECT
   - RULE-SET,Direct,DIRECT
   - RULE-SET,Lan,DIRECT
-  - RULE-SET,Download,DIRECT
+  - RULE-SET,Download,🚀 Global
   - GEOIP,CN,DIRECT
   - MATCH,🐟 Final
