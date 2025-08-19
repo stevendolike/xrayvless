@@ -1,41 +1,17 @@
-#分流分组
 proxy-groups:
-  # 分流分組
-  - {name: 🚀 Global, type: select, proxies: [☑️ SELECT, ♻️ AUTO, 🇭🇰 Hong Kong LB, 🇭🇰 Hong Kong UT, 🇭🇰 Hong Kong FB, 🇯🇵 Japan LB, 🇯🇵 Japan UT, 🇯🇵 Japan FB, 🇰🇷 Korea LB, 🇰🇷 Korea UT, 🇰🇷 Korea FB, 🇸🇬 Singapore LB, 🇸🇬 Singapore UT, 🇸🇬 Singapore FB, 🇹🇼 Taiwan LB, 🇹🇼 Taiwan UT, 🇹🇼 Taiwan FB, 🇺🇲 United States LB, 🇺🇲 United States UT, 🇺🇲 United States FB, DIRECT]}
-  - {name: 🎥 Media, type: select, proxies: [☑️ SELECT, ♻️ AUTO, 🇭🇰 Hong Kong LB, 🇭🇰 Hong Kong UT, 🇭🇰 Hong Kong FB, 🇯🇵 Japan LB, 🇯🇵 Japan UT, 🇯🇵 Japan FB, 🇰🇷 Korea LB, 🇰🇷 Korea UT, 🇰🇷 Korea FB, 🇸🇬 Singapore LB, 🇸🇬 Singapore UT, 🇸🇬 Singapore FB, 🇹🇼 Taiwan LB, 🇹🇼 Taiwan UT, 🇹🇼 Taiwan FB, 🇺🇲 United States LB, 🇺🇲 United States UT, 🇺🇲 United States FB, DIRECT]}
-  - {name: 🤖 OpenAi, type: select, proxies: [☑️ SELECT, ♻️ AUTO, 🇭🇰 Hong Kong LB, 🇭🇰 Hong Kong UT, 🇭🇰 Hong Kong FB, 🇯🇵 Japan LB, 🇯🇵 Japan UT, 🇯🇵 Japan FB, 🇰🇷 Korea LB, 🇰🇷 Korea UT, 🇰🇷 Korea FB, 🇸🇬 Singapore LB, 🇸🇬 Singapore UT, 🇸🇬 Singapore FB, 🇹🇼 Taiwan LB, 🇹🇼 Taiwan UT, 🇹🇼 Taiwan FB, 🇺🇲 United States LB, 🇺🇲 United States UT, 🇺🇲 United States FB, DIRECT]}
-  - {name: 🐟 Final, type: select, proxies: [🚀 Global, ☑️ SELECT, ♻️ AUTO, 🇭🇰 Hong Kong LB, 🇭🇰 Hong Kong UT, 🇭🇰 Hong Kong FB, 🇯🇵 Japan LB, 🇯🇵 Japan UT, 🇯🇵 Japan FB, 🇰🇷 Korea LB, 🇰🇷 Korea UT, 🇰🇷 Korea FB, 🇸🇬 Singapore LB, 🇸🇬 Singapore UT, 🇸🇬 Singapore FB, 🇹🇼 Taiwan LB, 🇹🇼 Taiwan UT, 🇹🇼 Taiwan FB, 🇺🇲 United States LB, 🇺🇲 United States UT, 🇺🇲 United States FB, DIRECT]}
+  - {name: 🚀 Global, type: select, proxies: [☑️ SELECT, ♻️ AUTO, 🇭🇰 Hong Kong LB, 🇯🇵 Japan LB, 🇰🇷 Korea LB, 🇸🇬 Singapore LB, 🇹🇼 Taiwan LB, 🇺🇲 United States LB, DIRECT]}
+  - {name: 🎥 Media, type: select, proxies: [☑️ SELECT, ♻️ AUTO, 🇭🇰 Hong Kong LB, 🇯🇵 Japan LB, 🇰🇷 Korea LB, 🇸🇬 Singapore LB, 🇹🇼 Taiwan LB, 🇺🇲 United States LB, DIRECT]}
+  - {name: 🤖 OpenAi, type: select, proxies: [☑️ SELECT, ♻️ AUTO, 🇭🇰 Hong Kong LB, 🇯🇵 Japan LB, 🇰🇷 Korea LB, 🇸🇬 Singapore LB, 🇹🇼 Taiwan LB, 🇺🇲 United States LB, DIRECT]}
+  - {name: 🐟 Final, type: select, proxies: [🚀 Global, ☑️ SELECT, ♻️ AUTO, 🇭🇰 Hong Kong LB, 🇯🇵 Japan LB, 🇰🇷 Korea LB, 🇸🇬 Singapore LB, 🇹🇼 Taiwan LB, 🇺🇲 United States LB, DIRECT]}
   - {name: ☑️ SELECT, type: select, include-all: true}
-
-  # 節點分組（每個地區增加 load-balance、url-test、fallback）
   - {name: ♻️ AUTO, type: url-test, include-all: true, interval: 600, tolerance: 50}
-  # 香港
   - {name: 🇭🇰 Hong Kong LB, type: load-balance, include-all: true, filter: "港|HK|(?i)Hong"}
-  - {name: 🇭🇰 Hong Kong UT, type: url-test, include-all: true, interval: 600, tolerance: 50, filter: "港|HK|(?i)Hong"}
-  - {name: 🇭🇰 Hong Kong FB, type: fallback, include-all: true, interval: 600, tolerance: 50, filter: "港|HK|(?i)Hong"}
-  # 日本
   - {name: 🇯🇵 Japan LB, type: load-balance, include-all: true, filter: "日本|东京|JP|(?i)Japan"}
-  - {name: 🇯🇵 Japan UT, type: url-test, include-all: true, interval: 600, tolerance: 50, filter: "日本|东京|JP|(?i)Japan"}
-  - {name: 🇯🇵 Japan FB, type: fallback, include-all: true, interval: 600, tolerance: 50, filter: "日本|东京|JP|(?i)Japan"}
-  # 韓國
   - {name: 🇰🇷 Korea LB, type: load-balance, include-all: true, filter: "韩|KR|(?i)Korea"}
-  - {name: 🇰🇷 Korea UT, type: url-test, include-all: true, interval: 600, tolerance: 50, filter: "韩|KR|(?i)Korea"}
-  - {name: 🇰🇷 Korea FB, type: fallback, include-all: true, interval: 600, tolerance: 50, filter: "韩|KR|(?i)Korea"}
-  # 新加坡
   - {name: 🇸🇬 Singapore LB, type: load-balance, include-all: true, filter: "新加|坡|SG|(?i)Singapore"}
-  - {name: 🇸🇬 Singapore UT, type: url-test, include-all: true, interval: 600, tolerance: 50, filter: "新加|坡|SG|(?i)Singapore"}
-  - {name: 🇸🇬 Singapore FB, type: fallback, include-all: true, interval: 600, tolerance: 50, filter: "新加|坡|SG|(?i)Singapore"}
-  # 台灣
   - {name: 🇹🇼 Taiwan LB, type: load-balance, include-all: true, filter: "台|湾|TW|(?i)Taiwan"}
-  - {name: 🇹🇼 Taiwan UT, type: url-test, include-all: true, interval: 600, tolerance: 50, filter: "台|湾|TW|(?i)Taiwan"}
-  - {name: 🇹🇼 Taiwan FB, type: fallback, include-all: true, interval: 600, tolerance: 50, filter: "台|湾|TW|(?i)Taiwan"}
-  # 美國
   - {name: 🇺🇲 United States LB, type: load-balance, include-all: true, filter: "美|US|(?i)States|American"}
-  - {name: 🇺🇲 United States UT, type: url-test, include-all: true, interval: 600, tolerance: 50, filter: "美|US|(?i)States|American"}
-  - {name: 🇺🇲 United States FB, type: fallback, include-all: true, interval: 600, tolerance: 50, filter: "美|US|(?i)States|American"}
 
-  
-# 分流规则 
 rule-providers:
   OpenAi1:      {behavior: classical, interval: 86400, format: yaml, type: http, url: https://gist.githubusercontent.com/ddgksf2013/cb4121e8b5c5d865cc949cb8120320c4/raw/Ai.yaml, path: ./ruleset/OpenAi1.yaml}
   OpenAi2:      {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/juewuy/ShellCash/master/lrules/ai.list, path: ./ruleset/OpenAi2.yaml}
@@ -52,7 +28,6 @@ rule-providers:
   CMBlog:       {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/CMBlog.list, path: ./ruleset/CMBlog.yaml}
   Cloudflare:   {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Cloudflare/Cloudflare.list, path: ./ruleset/Cloudflare.yaml}
 
-# 分流Policy 
 rules:
   - RULE-SET,OpenAi1,🤖 OpenAi
   - RULE-SET,OpenAi2,🤖 OpenAi
