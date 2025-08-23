@@ -1,0 +1,3 @@
+# 农行防代理检测
+
+HOST,msmp.abchina.com.cn,REJECT
