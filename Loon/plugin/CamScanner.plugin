@@ -1,8 +1,8 @@
 #!name=扫描全能王去广告
+#!openUrl = https://apps.apple.com/app/id388627783
 #!desc=解锁黄金会员，解锁部分功能(云OCR不可用)，使用前先开脚本．
 #!icon=https://raw.githubusercontent.com/stevendolike/xrayvless/refs/heads/main/Loon/icon/camscanner.png
-#!author= @chxm1023
-#!homepage= https://t.me/ddm1023
+#!author= @chxm1023[https://github.com/chxm1023]
 
 [Script]
 http-response ^https:\/\/.*\.(intsig\.net|camscanner\.com) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/CamScanner.js, requires-body=true, timeout=60, tag=CamScanner
