@@ -1,15 +1,15 @@
 #!name=获取cookie合集
-#!icon=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/others/cookie.png
+#!icon=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/group/iBeta.png
 #!desc=获取成功后，关闭获取ck脚本，避免产生不必要的mitm
 
 [Argument]
-阿里云盘 = switch,false,tag=阿里云盘 Cookie,desc=是否启用此处修改
-高德地图 = switch,false,tag=高德地图 Cookie,desc=是否启用此处修改
-华住会 = switch,false,tag=华住会 Cookie,desc=是否启用此处修改
-美团买菜 = switch,false,tag=美团买菜 Cookie,desc=是否启用此处修改
-小蚕霸王餐 = switch,false,tag=小蚕霸王餐 Cookie,desc=是否启用此处修改
-歪麦霸王餐 = switch,false,tag=歪麦霸王餐 Cookie,desc=是否启用此处修改
-晓晓优选 = switch,false,tag=晓晓优选 Cookie,desc=是否启用此处修改
+阿里云盘 = switch,false,tag=阿里云盘 Cookie
+高德地图 = switch,false,tag=高德地图 Cookie
+华住会 = switch,false,tag=华住会 Cookie
+美团买菜 = switch,false,tag=美团买菜 Cookie
+小蚕霸王餐 = switch,false,tag=小蚕霸王餐 Cookie
+歪麦霸王餐 = switch,false,tag=歪麦霸王餐 Cookie
+晓晓优选 = switch,false,tag=晓晓优选 Cookie
 
 [Script]
 # > 阿里云盘
