@@ -1,0 +1,34 @@
+#!name=定时任务合集
+#!icon=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/group/iBeta.png
+
+[Argument]
+AliyunRunTime = input,"1 7,11,17 * * *",tag=阿里云盘执行时间
+AliyunTask = switch,false,tag=[开关] 阿里云盘
+GaodeRunTime = input,"2 0 * * *",tag=高德地图执行时间
+GaodeTask = switch,false,tag=[开关] 高德地图
+HuazhuRunTime = input,"3 0 * * *",tag=华住会执行时间
+HuazhuTask = switch,false,tag=[开关] 华住会
+MeituanRunTime = input,"4 0,2 * * *",tag=美团买菜执行时间
+MeituanTask = switch,false,tag=[开关] 美团买菜
+XcbwcRunTime = input,"5 0,1 * * *",tag=小蚕霸王餐执行时间
+XcbwcTask = switch,false,tag=[开关] 小蚕霸王餐
+WmbwcRunTime = input,"6 0 * * *",tag=歪麦霸王餐执行时间
+WmbwcTask = switch,false,tag=[开关] 歪麦霸王餐
+XxyxRunTime = input,"7 0 * * *",tag=晓晓优选执行时间
+XxyxTask = switch,false,tag=[开关] 晓晓优选
+
+[Script]
+# 阿里云盘
+cron {AliyunRunTime} script-path=https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js, tag=阿里云盘, timeout=300, enable={AliyunTask}
+# 高德地图
+cron {GaodeRunTime} script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js, tag=高德地图, timeout=300, enable={GaodeTask}
+# 华住会
+cron {HuazhuRunTime} script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/hzh.js, tag=华住会, timeout=300, enable={HuazhuTask}
+# 美团买菜
+cron {MeituanRunTime} script-path=https://raw.githubusercontent.com/JoJoJotarou/myScript/master/script/meituan/mall.meituan.mallcoin.task.js, tag=美团买菜, timeout=300, enable={MeituanTask}
+# 小蚕霸王餐
+cron {XcbwcRunTime} script-path=https://gist.githubusercontent.com/Sliverkiss/250a02315f0a2c99f42da3b3573375c8/raw/xcbwc.js, tag=小蚕霸王餐, timeout=300, enable={XcbwcTask}
+# 歪麦霸王餐
+cron {WmbwcRunTime} script-path=https://gist.githubusercontent.com/Sliverkiss/49a9ffb2169a2becc33bf4fdbf6eb99a/raw/wmbwc.js, tag=歪麦霸王餐, timeout=300, enable={WmbwcTask}
+# 晓晓优选
+cron {XxyxRunTime} script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/xxyx/xxyx_signin.js, tag=晓晓优选, timeout=300, enable={XxyxTask}
