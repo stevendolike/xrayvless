@@ -1,0 +1,45 @@
+#!name=阿里云盘任务,去广告
+#!desc=定时任务、Cookie获取及广告过滤
+#!openUrl=https://apps.apple.com/app/id1494661473
+#!tag=去广告
+#!icon=https://raw.githubusercontent.com/sooyaaabo/Loon/main/Icon/App-Icon/Alipan-01.png
+
+[Argument]
+RunTime = input,"1 7,11,17 * * *",tag=自定义执行时间
+Aliyun = switch,false,tag=[开关] 每日任务
+Cookie = switch,false,tag=[开关] Cookie
+
+[Rule]
+# 拦截广告相关IP
+IP-CIDR, 203.107.1.1/24, REJECT, no-resolve
+
+[Rewrite]
+# 首页活动日历
+^https:\/\/member\.alipan\.com\/v2\/activity\/sign_in_luckyBottle reject-dict
+
+# 首页板块入口
+^https:\/\/api\.alipan\.com\/adrive\/v1\/file\/getTopFolders reject-dict
+
+# 过滤新闻中的广告内容
+^https:\/\/(biz)?api\.alipan\.com\/apps\/v\d\/users?\/home\/news response-body-json-jq 'if .result|length>0 then .result|=map(select(.code|contains("productUpdate")|not)) else . end'
+
+# 移除特定板块
+^https:\/\/(biz)?api\.alipan\.com\/apps\/v\d\/users?\/home\/widgets response-body-json-jq 'delpaths([["album"],["banners"],["coreFeatures"],["introduceAlipan"],["minorBackup"]])'
+
+# 过滤特定锚点
+^https:\/\/member\.alipan\.com\/v1\/users\/onboard_list response-body-json-jq 'if .result|length>0 then .result|=map(select(.anchor|IN("backup_list_under_mydevice_banner","backup_top_banner","home_bulletin_board","home_top_banner","resource_top_banner","video_top_banner")|not)) else . end'
+
+[Script]
+# 阿里云盘定时任务
+cron {RunTime} script-path=https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js, tag=阿里云盘任务, timeout=300, enable={Aliyun}
+
+# 阿里云盘Cookie获取
+http-request ^https:\/\/(auth|aliyundrive)\.alipan\.com\/v2\/account\/token script-path=https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js, tag=阿里云盘Cookie, requires-body=true, timeout=60, enable={Cookie}
+
+# 阿里云盘移除广告
+http-response ^https:\/\/(biz)?api\.alipan\.com\/apps\/v\d\/users?\/home\/(?:news|widgets) script-path=https://raw.githubusercontent.com/sooyaaabo/Loon/main/Script/Alipan/Alipan.js, requires-body=true, tag=[阿里云盘]移除广告
+
+http-response ^https:\/\/member\.alipan\.com\/v1\/users\/onboard_list script-path=https://raw.githubusercontent.com/sooyaaabo/Loon/main/Script/Alipan/Alipan.js, requires-body=true, tag=[阿里云盘]移除广告
+
+[MITM]
+hostname = auth.alipan.com, auth.aliyundrive.com, *api.alipan.com, *api.aliyundrive.com, member.alipan.com, member.aliyundrive.com
