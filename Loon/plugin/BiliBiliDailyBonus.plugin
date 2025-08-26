@@ -6,9 +6,9 @@
 
 [Argument]
 RunTime = input,"30 7 * * *",tag=自定义执行时间,desc=可手动更改脚本运行时间，默认早上7点半
-BBDaily = switch,true,tag=[开关] 每日等级任务
+BBDaily = switch,false,tag=[开关] 每日等级任务
 扫码Cookie = switch,false,tag=[开关] 扫码Cookie
-APPCookie = switch,true,tag=[开关] APPCookie
+APPCookie = switch,false,tag=[开关] APPCookie
 bigPoint = switch,false,tag=[开关] 观看剧集大积分
 
 [Script]
