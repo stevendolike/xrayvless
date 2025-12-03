@@ -1,6 +1,10 @@
-#!name=Nicegram会员解锁@ddgksf2013
-#!desc=Nicegram会员解锁@ddgksf2013
+#!name=Nicegram会员解锁
+#!desc=解锁会员权限 解锁步骤：https://t.me/ddgksf2021/5439
+#!openUrl = https://apps.apple.com/app/id1608870673
+#!author = ddgksf2013[https://t.me/ddgksf2021]
+#!homepage = https://github.com/ddgksf2013
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Nicegram.png
+#!date = 2024-02-24
 
 [Script]
 # > Nicegram☆解锁会员权限（2024-02-24）@ddgksf2013
