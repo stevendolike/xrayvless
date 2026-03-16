@@ -240,21 +240,24 @@
       {
         "type": "field",
         "domain": [
-          "steven","db-ip.com"
+          "steven",
+          "db-ip.com"
         ],
         "outboundTag": "warp-socks5-v4"
       },
       {
         "type": "field",
         "domain": [
-          "steven","ip.me"
+          "steven",
+          "ip.me"
         ],
         "outboundTag": "warp-socks5-v6"
       },
       {
         "type": "field",
         "domain": [
-          "steven","ifconfig.co"
+          "steven",
+          "ifconfig.co"
         ],
         "outboundTag": "warp-wg-v4"
       },
@@ -269,7 +272,8 @@
           "geosite:netflix",
           "geosite:hbo",
           "geosite:disney",
-          "geosite:category-porn"
+          "geosite:category-porn",
+          "geosite:category-ai-!cn"
         ],
         "outboundTag": "warp-wg-v6"
       }
