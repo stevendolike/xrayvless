@@ -224,41 +224,44 @@
       {
         "type": "field",
         "domain": [
-          "steven"
+          "steven",
+          "api.myip.com"
         ],
         "outboundTag": "IPv4"
       },
       {
         "type": "field",
         "domain": [
-          "steven"
+          "steven",
+          "api64.ipify.org"
         ],
         "outboundTag": "IPv6"
       },
       {
         "type": "field",
         "domain": [
-          "steven"
+          "steven","db-ip.com"
         ],
         "outboundTag": "warp-socks5-v4"
       },
       {
         "type": "field",
         "domain": [
-          "steven"
+          "steven","ip.me"
         ],
         "outboundTag": "warp-socks5-v6"
       },
       {
         "type": "field",
         "domain": [
-          "steven"
+          "steven","ifconfig.co"
         ],
         "outboundTag": "warp-wg-v4"
       },
       {
         "type": "field",
         "domain": [
+          "ipget.net",
           "geosite:google",
           "geosite:dazn",
           "geosite:discoveryplus",
