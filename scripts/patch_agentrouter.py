@@ -8,71 +8,95 @@ SOURCE_URL = (
     "ddgksf2013/Scripts/master/agentrouter_checkin.js"
 )
 
-OUTPUT = Path("dist/agentrouter_checkin.js")
+OUTPUT = Path("Loon/scripts/agentrouter_checkin.js")
+
 
 def main():
     request = urllib.request.Request(
         SOURCE_URL,
-        headers={"User-Agent": "GitHub-Actions-AgentRouter-Updater"},
+        headers={
+            "User-Agent": "GitHub-Actions-AgentRouter-Updater"
+        },
     )
 
     with urllib.request.urlopen(request, timeout=30) as response:
-        source = response.read().decode("utf-8")
+        source = response.read().decode("utf-8-sig")
 
-    # 1. 在 CONFIG 前加入 Loon Script v2 參數讀取
-    marker = "const CONFIG = {"
+    # 1. 在 CONFIG 前加入 Loon Script v2 參數物件
+    config_marker = "const CONFIG = {"
 
-    if marker not in source:
+    if source.count(config_marker) != 1:
         raise RuntimeError(
-            "找不到 CONFIG 定義，上游腳本結構可能已變更。"
+            "找不到唯一的 CONFIG 定義；"
+            "上游腳本可能已變更，請檢查補丁。"
         )
 
     if "const LOON_ARGUMENT =" in source:
         raise RuntimeError(
-            "上游腳本已包含 LOON_ARGUMENT，請檢查是否需要更新補丁。"
+            "上游已包含 LOON_ARGUMENT，請檢查補丁是否需要更新。"
         )
 
-    source = source.replace(
-        marker,
-        '''const LOON_ARGUMENT =
+    argument_code = """const LOON_ARGUMENT =
   typeof $argument !== "undefined" &&
   $argument &&
   typeof $argument === "object"
     ? $argument
     : {};
 
-const CONFIG = {''',
+"""
+
+    source = source.replace(
+        config_marker,
+        argument_code + config_marker,
         1,
     )
 
-    # 2. 將空白 account 改為讀取 Loon 傳入的帳密
-    pattern = r'(?m)^([ \t]*)account:\s*""\s*,.*$'
+    # 2. 優先使用 Loon 插件傳入的帳號密碼
+    function_pattern = r"function\s+collectAccounts\s*\(\s*\)\s*\{"
 
-    replacement = (
-        r'\1account: ('
-        'typeof LOON_ARGUMENT.AgentRouterEmail === "string" && '
-        'typeof LOON_ARGUMENT.AgentRouterPassword === "string" && '
-        'LOON_ARGUMENT.AgentRouterEmail.trim() && '
-        'LOON_ARGUMENT.AgentRouterPassword'
-        ') ? '
-        '`${LOON_ARGUMENT.AgentRouterEmail.trim()}#'
-        '${LOON_ARGUMENT.AgentRouterPassword}` : "",'
-    )
+    match = re.search(function_pattern, source)
 
-    source, count = re.subn(pattern, replacement, source)
-
-    if count != 1:
+    if not match:
         raise RuntimeError(
-            f"預期修改一個 CONFIG.account，實際匹配 {count} 個；"
-            "請檢查上游腳本是否已變更。"
+            "找不到 collectAccounts()；"
+            "上游腳本結構可能已變更。"
         )
+
+    argument_override = r"""
+  const loonEmail =
+    typeof LOON_ARGUMENT.AgentRouterEmail === "string"
+      ? LOON_ARGUMENT.AgentRouterEmail.trim()
+      : "";
+
+  const loonPassword =
+    typeof LOON_ARGUMENT.AgentRouterPassword === "string"
+      ? LOON_ARGUMENT.AgentRouterPassword
+      : "";
+
+  if (loonEmail && loonPassword) {
+    log("已读取 Loon 插件参数");
+    return [{
+      name: "Loon账号",
+      email: loonEmail,
+      password: loonPassword
+    }];
+  }
+
+"""
+
+    source = (
+        source[:match.end()]
+        + argument_override
+        + source[match.end():]
+    )
 
     # 3. 輸出修改後的腳本
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(source, encoding="utf-8")
 
     print(f"Updated: {OUTPUT}")
-    print("Loon Script v2 account arguments enabled.")
+    print("Loon Script v2 arguments injected.")
+
 
 if __name__ == "__main__":
     main()
