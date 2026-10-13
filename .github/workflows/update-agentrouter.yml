@@ -36,7 +36,7 @@ jobs:
           node-version: "22"
 
       - name: Validate JavaScript syntax
-        run: node --check Loon/plugin/agentrouter_checkin.js
+        run: node --check Loon/scripts/agentrouter_checkin.js
 
       - name: Check whitespace errors
         run: git diff --check
@@ -46,7 +46,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add Loon/plugin/agentrouter_checkin.js
+          git add Loon/scripts/agentrouter_checkin.js
 
           if git diff --cached --quiet; then
             echo "No upstream changes."
