@@ -18,6 +18,8 @@ XxyxRunTime = input,"7 0 * * *",tag=晓晓优选执行时间
 XxyxTask = switch,false,tag=[开关] 晓晓优选
 WPSRunTime = input,"0 10 * * *",tag=WPS执行时间
 WPSTask = switch,false,tag=[开关] WPS签到
+PingMeRunTime = input,"30 8,20 * * *",tag=PingMe执行时间
+PingMeTask = switch,false,tag=[开关] PingMe签到
 
 [Script]
 
@@ -44,3 +46,6 @@ cron ${XxyxRunTime} then script("https://raw.githubusercontent.com/fmz200/wool_s
 
 # WPS签到
 cron ${WPSRunTime} then script("https://raw.githubusercontent.com/MaYIHEI/paperclip/refs/heads/main/app/wps/wps.js") with tag="WPS签到", img_url="https://raw.githubusercontent.com/MaYIHEI/pin/refs/heads/main/app/wps.png", timeout=300, enable=${WPSTask}
+
+# PingMe签到
+cron ${PingMeRunTime} then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/PingMe/PingMeSignin.js") with tag="PingMe签到", timeout=300, enable=${PingMeTask}
