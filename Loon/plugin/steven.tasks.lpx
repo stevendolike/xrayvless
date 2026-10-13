@@ -20,6 +20,8 @@ WPSRunTime = input,"0 10 * * *",tag=WPS执行时间
 WPSTask = switch,false,tag=[开关] WPS签到
 PingMeRunTime = input,"30 */4 * * *",tag=PingMe执行时间
 PingMeTask = switch,false,tag=[开关] PingMe签到
+AgentRouterRunTime = input,"32 0 * * *",tag=AgentRouter执行时间
+AgentRouterTask = switch,false,tag=[开关] AgentRouter签到
 
 [Script]
 
@@ -50,6 +52,6 @@ cron ${WPSRunTime} then script("https://raw.githubusercontent.com/MaYIHEI/paperc
 # PingMe签到
 cron ${PingMeRunTime} then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/PingMe/PingMeSignin.js") with tag="PingMe签到", timeout=300, enable=${PingMeTask}
 
-# AgentRouter签到
- * cron "0 9 * * *" then script("https://github.com/ddgksf2013/Scripts/raw/master/agentrouter_checkin.js") with tag="AgentRouter 签到", timeout=120
+# AgentRouter签到 
+cron ${AgentRouterRunTime} then script("https://github.com/ddgksf2013/Scripts/raw/master/agentrouter_checkin.js") with tag="AgentRouter签到", timeout=300, enable=${AgentRouterTask}
 
