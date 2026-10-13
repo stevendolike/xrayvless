@@ -1,0 +1,12 @@
+#!name=AgentRouter 自动签到
+#!desc=自动同步上游脚本，支持 Loon 插件参数
+#!arguments=AgentRouterEmail,AgentRouterPassword,AgentRouterRunTime,AgentRouterTask
+
+[Argument]
+AgentRouterEmail = input,,tag=AgentRouter邮箱
+AgentRouterPassword = input,,tag=AgentRouter密码
+AgentRouterRunTime = input,"0 9 * * *",tag=AgentRouter执行时间
+AgentRouterTask = switch,false,tag=[开关] AgentRouter签到
+
+[Script]
+cron "${AgentRouterRunTime}" then script("https://raw.githubusercontent.com/stevendolike/xrayvless/main/Loon/scripts/agentrouter_checkin.js", {${AgentRouterEmail}, ${AgentRouterPassword}}) with tag="AgentRouter签到", timeout=120, enable=${AgentRouterTask}
