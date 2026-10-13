@@ -18,7 +18,7 @@ XxyxRunTime = input,"7 0 * * *",tag=晓晓优选执行时间
 XxyxTask = switch,false,tag=[开关] 晓晓优选
 WPSRunTime = input,"0 10 * * *",tag=WPS执行时间
 WPSTask = switch,false,tag=[开关] WPS签到
-PingMeRunTime = input,"30 8,20 * * *",tag=PingMe执行时间
+PingMeRunTime = input,"30 */4 * * *",tag=PingMe执行时间
 PingMeTask = switch,false,tag=[开关] PingMe签到
 
 [Script]
