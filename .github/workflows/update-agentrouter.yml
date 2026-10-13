@@ -4,6 +4,7 @@ name: Update AgentRouter Check-in
 on:
   workflow_dispatch:
   schedule:
+    # 每日 02:17 UTC 執行
     - cron: "17 2 * * *"
 
 permissions:
@@ -35,14 +36,17 @@ jobs:
           node-version: "22"
 
       - name: Validate JavaScript syntax
-        run: node --check dist/agentrouter_checkin.js
+        run: node --check Loon/plugin/agentrouter_checkin.js
+
+      - name: Check whitespace errors
+        run: git diff --check
 
       - name: Commit updated script
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add dist/agentrouter_checkin.js
+          git add Loon/plugin/agentrouter_checkin.js
 
           if git diff --cached --quiet; then
             echo "No upstream changes."
