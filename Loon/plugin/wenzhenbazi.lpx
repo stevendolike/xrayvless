@@ -1,0 +1,11 @@
+#!name=问真八字
+#!desc=问真八字 VIP 接口响应修改
+#!icon=https://raw.githubusercontent.com/stevendolike/xrayvless/main/Loon/icon/wenzhenbazi.png
+#!author= @chxm1023[https://github.com/chxm1023]
+#!openUrl = https://apps.apple.com/app/id1665624645
+
+[Script]
+http-response https:\/\/bzpp3\.iwzbz\.com\/api\/.+\/user\/getvipinfo script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/wenzhenbazi.js, requires-body=true, timeout=20, tag=问真八字
+
+[MITM]
+hostname = bzpp3.iwzbz.com
