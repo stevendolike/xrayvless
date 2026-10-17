@@ -1,5 +1,6 @@
 #!name=定时任务合集
 #!icon=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/group/iBeta.png
+#!desc=任务設置
 
 [Argument]
 AliyunRunTime = input,"1 7,11,17 * * *",tag=阿里云盘执行时间
