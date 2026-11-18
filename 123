@@ -5,39 +5,72 @@ kr.best.lma.de5.net#🇰🇷 KR
 sg.best.lma.de5.net#🇸🇬 SG
 tw.best.lma.de5.net#🇹🇼 TW
 us.best.lma.de5.net#🇺🇸 US
-2606:4700::0#CF-01
-104.16.0.0#CF-02
-104.17.0.0#CF-03
-104.18.0.0#CF-04
-104.19.0.0#CF-05
-104.20.0.0#CF-06
-104.21.0.0#CF-07
-104.22.0.0#CF-08
-104.24.0.0#CF-09
-104.25.0.0#CF-10
-104.26.0.0#CF-11
-104.27.0.0#CF-12
-162.159.0.0#CF-13
-172.66.0.0#CF-14
-172.67.0.0#CF-15
-nmplus.hk#CF-16
-www.nmg.com.hk#CF-17
-gaming-lenovo-prod.bettermode.io#CF-18
-smb-lenovo-prod.bettermode.io#CF-19
-staticdelivery.nexusmods.com#CF-20
-store.ubi.com#CF-21
-malaysia.com#CF-22
-www.gco.gov.qa#CF-23
-russia.com#CF-24
-www.gov.se#CF-25
-www.thaigov.go.th#CF-26
-www.gov.ua#CF-27
-www.ntu.edu.sg#CF-28
-emaxloadbank.com#CF-29
-www.wto.org#CF-30
-cu.877774.xyz#CF-31
-jobsdb.com#CF-32
-www.carousell.sg#CF-33
-www.bis.gov#CF-34
-www.sage.com#CF-35
+2606:4700::0	#CF-01
+104.16.0.0	#CF-02
+104.17.0.0	#CF-03
+104.18.0.0	#CF-04
+104.19.0.0	#CF-05
+104.20.0.0	#CF-06
+104.21.0.0	#CF-07
+104.24.0.0	#CF-08
+104.25.0.0	#CF-09
+104.26.0.0	#CF-10
+104.27.0.0	#CF-11
+162.159.0.0	#CF-12
+172.66.0.0	#CF-13
+172.67.0.0	#CF-14
+bestcf.030101.xyz	#CF-15
+bluehost.com	#CF-16
+cdnjs.com	#CF-17
+cf.090227.xyz	#CF-18
+cf.877774.xyz	#CF-19
+cloudflare.dev	#CF-20
+cloudflare.net	#CF-21
+cloudflare.seeck.cn	#CF-22
+cloudflare-ech.com	#CF-23
+cloudflare-eth.com	#CF-24
+cmcc.cloudflare.seeck.cn	#CF-25
+cookiebot.com	#CF-26
+ctcc.cloudflare.seeck.cn	#CF-27
+cu.877774.xyz	#CF-28
+cucc.cloudflare.seeck.cn	#CF-29
+emaxloadbank.com	#CF-30
+gaming-lenovo-prod.bettermode.io	#CF-31
+glassdoor.com	#CF-32
+investor.apple.com	#CF-33
+jimdo.com	#CF-34
+jobsdb.com	#CF-35
+malaysia.com	#CF-36
+markmonitor.com	#CF-37
+mfa.gov.ua	#CF-38
+mycareer.verizon.com	#CF-39
+nexusmods.com	#CF-40
+nmplus.hk	#CF-41
+onetrust.com	#CF-42
+pages.dev	#CF-43
+r2.dev	#CF-44
+russia.com	#CF-45
+sage.com	#CF-46
+shopify.com	#CF-47
+skk.moe	#CF-48
+smb-lenovo-prod.bettermode.io	#CF-49
+staticdelivery.nexusmods.com	#CF-50
+store.epicgames.com	#CF-51
+store.ubi.com	#CF-52
+thewoodflooringhub.co.uk	#CF-53
+www.bis.gov	#CF-54
+www.carousell.sg	#CF-55
+www.gco.gov.qa	#CF-56
+www.gov.se	#CF-57
+www.gov.ua	#CF-58
+www.nmg.com.hk	#CF-59
+www.ntu.edu.sg	#CF-60
+www.sage.com	#CF-61
+www.speedtest.net	#CF-62
+www.thaigov.go.th	#CF-63
+www.tpg.com	#CF-64
+www.visa.com	#CF-65
+www.wilshire.com	#CF-66
+www.wto.org	#CF-67
+
 
