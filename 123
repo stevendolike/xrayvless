@@ -5,71 +5,67 @@ kr.best.lma.de5.net#🇰🇷 KR
 sg.best.lma.de5.net#🇸🇬 SG
 tw.best.lma.de5.net#🇹🇼 TW
 us.best.lma.de5.net#🇺🇸 US
-2606:4700::0	#CF-01
-104.16.0.0	#CF-02
-104.17.0.0	#CF-03
-104.18.0.0	#CF-04
-104.19.0.0	#CF-05
-104.20.0.0	#CF-06
-104.21.0.0	#CF-07
-104.24.0.0	#CF-08
-104.25.0.0	#CF-09
-104.26.0.0	#CF-10
-104.27.0.0	#CF-11
-162.159.0.0	#CF-12
-172.66.0.0	#CF-13
-bestcf.030101.xyz	#CF-15
-bluehost.com	#CF-16
-cdnjs.com	#CF-17
-cf.090227.xyz	#CF-18
-cf.877774.xyz	#CF-19
-cloudflare.dev	#CF-20
-cloudflare.net	#CF-21
-cloudflare.seeck.cn	#CF-22
-cloudflare-ech.com	#CF-23
-cloudflare-eth.com	#CF-24
-cmcc.cloudflare.seeck.cn	#CF-25
-cookiebot.com	#CF-26
-ctcc.cloudflare.seeck.cn	#CF-27
-cu.877774.xyz	#CF-28
-cucc.cloudflare.seeck.cn	#CF-29
-emaxloadbank.com	#CF-30
-gaming-lenovo-prod.bettermode.io	#CF-31
-glassdoor.com	#CF-32
-investor.apple.com	#CF-33
-jimdo.com	#CF-34
-jobsdb.com	#CF-35
-malaysia.com	#CF-36
-markmonitor.com	#CF-37
-mfa.gov.ua	#CF-38
-mycareer.verizon.com	#CF-39
-nexusmods.com	#CF-40
-nmplus.hk	#CF-41
-onetrust.com	#CF-42
-pages.dev	#CF-43
-r2.dev	#CF-44
-russia.com	#CF-45
-sage.com	#CF-46
-shopify.com	#CF-47
-skk.moe	#CF-48
-smb-lenovo-prod.bettermode.io	#CF-49
-staticdelivery.nexusmods.com	#CF-50
-store.epicgames.com	#CF-51
-store.ubi.com	#CF-52
-thewoodflooringhub.co.uk	#CF-53
-www.bis.gov	#CF-54
-www.carousell.sg	#CF-55
-www.gco.gov.qa	#CF-56
-www.gov.se	#CF-57
-www.gov.ua	#CF-58
-www.nmg.com.hk	#CF-59
-www.ntu.edu.sg	#CF-60
-www.sage.com	#CF-61
-www.speedtest.net	#CF-62
-www.thaigov.go.th	#CF-63
-www.tpg.com	#CF-64
-www.visa.com	#CF-65
-www.wilshire.com	#CF-66
-www.wto.org	#CF-67
-
-
+2606:4700::0#CF-01
+104.16.0.0#CF-02
+104.17.0.0#CF-03
+104.18.0.0#CF-04
+104.19.0.0#CF-05
+104.20.0.0#CF-06
+104.21.0.0#CF-07
+104.24.0.0#CF-08
+104.25.0.0#CF-09
+104.26.0.0#CF-10
+104.27.0.0#CF-11
+bestcf.030101.xyz#CF-12
+bluehost.com#CF-13
+cdnjs.com#CF-14
+cf.090227.xyz#CF-15
+cf.877774.xyz#CF-16
+cloudflare.dev#CF-17
+cloudflare.net#CF-18
+cloudflare.seeck.cn#CF-19
+cloudflare-ech.com#CF-20
+cloudflare-eth.com#CF-21
+cmcc.cloudflare.seeck.cn#CF-22
+cookiebot.com#CF-23
+ctcc.cloudflare.seeck.cn#CF-24
+cu.877774.xyz#CF-25
+cucc.cloudflare.seeck.cn#CF-26
+emaxloadbank.com#CF-27
+gaming-lenovo-prod.bettermode.io#CF-28
+glassdoor.com#CF-29
+investor.apple.com#CF-30
+jimdo.com#CF-31
+jobsdb.com#CF-32
+malaysia.com#CF-33
+markmonitor.com#CF-34
+mfa.gov.ua#CF-35
+mycareer.verizon.com#CF-36
+nexusmods.com#CF-37
+nmplus.hk#CF-38
+onetrust.com#CF-39
+pages.dev#CF-40
+r2.dev#CF-41
+russia.com#CF-42
+sage.com#CF-43
+shopify.com#CF-44
+skk.moe#CF-45
+smb-lenovo-prod.bettermode.io#CF-46
+staticdelivery.nexusmods.com#CF-47
+store.epicgames.com#CF-48
+store.ubi.com#CF-49
+thewoodflooringhub.co.uk#CF-50
+www.bis.gov#CF-51
+www.carousell.sg#CF-52
+www.gco.gov.qa#CF-53
+www.gov.se#CF-54
+www.gov.ua#CF-55
+www.nmg.com.hk#CF-56
+www.ntu.edu.sg#CF-57
+www.sage.com#CF-58
+www.speedtest.net#CF-59
+www.thaigov.go.th#CF-60
+www.tpg.com#CF-61
+www.visa.com#CF-62
+www.wilshire.com#CF-63
+www.wto.org#CF-64
